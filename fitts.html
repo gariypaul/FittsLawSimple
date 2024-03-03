@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fitts' Law Experiment</title>
+    <link rel="stylesheet" type="text/css" href="experiment.css">
+</head>
+<body>
+    <div id="experimentContainer">
+        <div id="startScreen" class="screen">Click anywhere to start experiment: The experiment involves clicking the squares from the left one to the right one 10 times till sizes change</div>
+        <div id="trialScreen" class="screen" style="display: none;">
+            <div id="leftSquare"class="target"></div>
+            <div id="rightSquare" class="target"></div>
+        </div>
+        <div id="trialEndScreen" class = "screen" style="display: none;"></div>
+        <div id="completionScreen" class ="screen" style="display: none;">Experiment Complete!</div>
+    </div>
+    <div id="results">
+        <canvas id="resultsGraph" width="800" height="600" style="display: none;"></canvas>
+    </div>
+    <script src="experiment.js"></script>
+</body>
+</html>
